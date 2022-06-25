@@ -1,0 +1,215 @@
+{
+  "acrobacia": {
+    "nome": "Acrobacia",
+    "atributo": "des",
+    "treino": false,
+    "penalidade": true,
+    "descricao": "Você consegue fazer proezas acrobáticas.",
+    "acoes": {
+      "amortecer_queda": {},
+      "equilibrio": {},
+      "escapar": {},
+      "levantar": {},
+      "esgueirar": {}
+    }
+  },
+  "atletismo": {
+    "nome": "Atletismo",
+    "atributo": "for",
+    "treino": false,
+    "penalidade": false,
+    "descricao": "Realizar façanhas atléticas.",
+    "acoes": {
+      "corrida": {},
+      "escalar": {},
+      "nadar": {},
+      "saltar": {}
+    }
+  },
+  "atuacao": {
+    "nome": "Atuação",
+    "atributo": "car",
+    "treino": false,
+    "penalidade": false,
+    "descricao": "Fazer apresentações artísticas.",
+    "acoes": {
+      "apresentacao": {},
+      "impressionar": {}
+    }
+  },
+  "cavalgar": {
+    "nome": "Cavalgar",
+    "atributo": "des",
+    "treino": false,
+    "penalidade": false,
+    "descricao": "Condução de montarias.",
+    "acoes": {
+      "conduzir": {},
+      "galopar": {},
+      "montar": {}
+    }
+  },
+  "conhecimento": {
+    "nome": "Conhecimento",
+    "atributo": "int",
+    "treino": true,
+    "descricao": "Conhecimento sobre assuntos gerais como história e geografia.",
+    "acoes": {
+      "idioma": {},
+      "informacao": {}
+    }
+  },
+  "cura": {
+    "nome": "Cura",
+    "atributo": "sab",
+    "descricao": "Tratar ferimentos, doenças e venenos.",
+    "acoes": {
+      "cuidado": {},
+      "necropsia": {},
+      "primeiros_socorros": {},
+      "tratamento": {}
+    }
+  },
+  "diplomacia": {
+    "nome": "Diplomacia",
+    "atributo": "car",
+    "descricao": "Usar lábia e argumentação para convencer outras pessoas.",
+    "acoes": {
+      "barganha": {},
+      "mudar_atitude": {},
+      "favor": {}
+    }
+  },
+  "enganacao": {
+    "nome": "Enganação",
+    "atributo": "car",
+    "descricao": "Enganar com mentiras, falsificações e disfarces.",
+    "acoes": {
+      "blefar": {},
+      "disfarcar": {},
+      "falsificar": {},
+      "fintar": {},
+      "insinuar": {},
+      "intriga": {}
+    }
+  },
+  "fotitude": {
+    "nome": "Fortitude",
+    "atributo": "con",
+    "descricao": "Medir vigor e resistência física",
+    "acoes": {
+      "folego": {},
+      "resistencia": {}
+    }
+  },
+  "furtividade": {
+    "nome": "Furtividade",
+    "atributo": "des",
+    "penalidade": true,
+    "descricao": "Se esconder nas sombras, andar sem fazer barulho, seguir sem ser notado",
+    "acoes": {
+      "esconder": {},
+      "seguir": {}
+    }
+  },
+  "iniciativa": {
+    "nome": "Iniciativa",
+    "atributo": "des",
+    "descricao": "Velocidade de reação em situações de periodo.",
+    "acoes": {
+      "agir": {}
+    }
+  },
+  "intimidacao": {
+    "nome": "Intimidação",
+    "atributo": "car",
+    "descricao": "Assustar ou coagir pessoas.",
+    "acoes": {
+      "assustar": {},
+      "coagir": {}
+    }
+  },
+  "intuicao": {
+    "nome": "Intuição",
+    "atributo": "sab",
+    "descricao": "\"Sexto sentido\"",
+    "acoes": {
+      "perceber_blefe": {},
+      "pressentimento": {}
+    }
+  },
+  "investigacao": {
+    "nome": "Investigação",
+    "atributo": "int",
+    "descricao": "Descobrir pistas",
+    "acoes": {
+      "obter_informacoes": {},
+      "procurar": {}
+    }
+  },
+  "ladinagem": {
+    "nome": "Laginagem",
+    "atributo": "des",
+    "descricao": "Execer tarefas de um ladrão com mãos leves e mente suja.",
+    "acoes": {
+      "abrir_fechadura": {},
+      "ocultar_item": {},
+      "punga": {},
+      "sabotar": {}
+    }
+  },
+  "luta": {
+    "nome": "Luta",
+    "atributo": "for",
+    "descricao": "Determina sua capacidade de luta corpo a corpo, seja com armas brancas, ou desarmado.",
+    "acoes": {
+      "atacar": {}
+    }
+  },
+  "percepcao": {
+    "nome": "Percepção",
+    "atributo": "sab",
+    "descricao": "Você nota coisas usando os sentidos.",
+    "acoes": {
+      "observar": {},
+      "ouvir": {}
+    }
+  },
+  "pontaria": {
+    "nome": "Pontaria",
+    "atributo": "des",
+    "descricao": "Determina sua capacidade de de mira com armas de arremesso ou de disparo",
+    "acoes": {
+      "ataque": {}
+    }
+  },
+  "reflexo": {
+    "nome": "Reflexos",
+    "atributo": "des",
+    "descricao": "Evitar ameaças que exigem reação rápida",
+    "acoes": {
+      "evitar_finta": {},
+      "resistencia": {}
+    }
+  },
+  "sobrevivencia": {
+    "nome": "Sobrevivência",
+    "atributo": "sab",
+    "descricao": "Reconhecer e vitar perigos da natureza.",
+    "acoes": {
+      "acampamento": {},
+      "identificar_criatura": {},
+      "orientar": {},
+      "rastrear": {}
+    }
+  },
+  "vontade": {
+    "nome": "Vontade",
+    "atributo": "sab",
+    "descricao": "Determina sua capacidade de concentração e força de vontade",
+    "acoes": {
+      "concentrar": {},
+      "resistencia": {}
+    }
+  }
+}
