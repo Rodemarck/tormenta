@@ -7,37 +7,38 @@ import 'package:tormenta/model/pericia.dart';
 
 
 class Personagem{
-  Map<String, dynamic> _atributos = {};
-  Map<String, dynamic> _pericias  = {};
-  String nome = 'nhaa';
+  Map<String, Atributo> atributos = {};
+  Map<String, dynamic> pericias  = {};
+  String nome = 'nhaa21';
   int ouro = 10;
 
-  Future<Personagem> inicializa_pericia() async {
+  Future inicializa_pericia() async {
     final String response = await rootBundle.loadString('normal/pericias.json');
     final data = await json.decode(response);
-    /*for(var per in data.keys){
-      _pericias[per] = Pericia(
-         data[per]['nome'],
-         data[per]['atributo'],
-         (data[per]['treino'] == true),
-         (data[per]['penalidade'] == true),
-         data[per]['descricao'],
-         data[per]['acoes']
+    for(var per in data.keys){
+      pericias[per] = Pericia(
+          data[per]['nome'],
+          data[per]['atributo'],
+          (data[per]['treino'] == true),
+          (data[per]['penalidade'] == true),
+          data[per]['descricao'],
+          data[per]['acoes']
       );
-    }*/
-    return this;
+    }
+    return 'this';
   }
   static Future<Personagem> cria() async {
     Personagem p = Personagem();
-    return await p.inicializa_pericia();
+    p.atributos['for'] = Atributo(10);
+    p.atributos['des'] = Atributo(10);
+    p.atributos['con'] = Atributo(10);
+    p.atributos['int'] = Atributo(10);
+    p.atributos['sab'] = Atributo(10);
+    p.atributos['car'] = Atributo(10);
+    await p.inicializa_pericia();
+    p.nome = 'rode';
+    return p;
   }
-  Personagem(){
-    _atributos['for'] = Atributo(10);
-    _atributos['des'] = Atributo(10);
-    _atributos['con'] = Atributo(10);
-    _atributos['int'] = Atributo(10);
-    _atributos['sab'] = Atributo(10);
-    _atributos['car'] = Atributo(10);
-  }
+  Personagem(){}
 
 }

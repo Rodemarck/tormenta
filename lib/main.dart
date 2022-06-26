@@ -1,10 +1,11 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
 import 'package:tormenta/model/personagem.dart';
-import 'package:tormenta/pages/homePage.dart';
+import 'package:tormenta/pages/atributo_page.dart';
+import 'package:tormenta/pages/home_page.dart';
+import 'package:tormenta/pages/load_page.dart';
+import 'package:tormenta/pages/mundo.dart';
 import 'package:tormenta/pages/sessao/loginPage.dart';
 
 void main() {
@@ -16,14 +17,21 @@ class MyApp extends StatelessWidget {
     @override
     void f() async {
       Personagem p = await Personagem.cria();
-      //print(p.nome);
+      Mundo.setPersonagem(p);
+      Navigator.push(
+          Mundo.context(),
+          MaterialPageRoute(builder: (context) => AtributoPage())
+      );
     }
     Widget build(BuildContext context) {
+      Mundo.setContext(context);
       f();
       return MaterialApp(
         title: 'Tormenta genesis',
         theme: ThemeData.dark(),
-        home:  LoginPage(),
+        home:  Scaffold(
+            body: LoadPage()
+        ),
       );
     }
 }

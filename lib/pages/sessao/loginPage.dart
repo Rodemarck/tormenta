@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tormenta/controller/login_controller.dart';
-import 'package:tormenta/pages/homePage.dart';
+import 'package:tormenta/pages/home_page.dart';
+
+import '../mundo.dart';
 
 
 class LoginPage extends StatefulWidget{
@@ -15,6 +17,7 @@ class LoginPage_State extends State<LoginPage>{
   String senha = '';
   @override
   Widget build(BuildContext context) {
+    Mundo.setContext(context);
     return Scaffold(
       body: Center(
         child: Column(
