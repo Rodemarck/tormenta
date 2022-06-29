@@ -1,0 +1,242 @@
+{
+  "humano": {
+    "nome": "Humano",
+    "deuses": ["valkaria"],
+    "atributos": {
+      "livre": {
+        "valor": 2,
+        "menos": []
+      }
+    },
+    "habilidades": [
+      "versatil"
+    ]
+  },
+  "anao": {
+    "nome": "Anão",
+    "atributos": {
+      "con": 4,
+      "sab": 2,
+      "des": -2
+    },
+    "habilidades": [
+      "devar_e_sempre",
+      "duro_como_pedra",
+      "tradicao_de_heredrimm"
+    ]
+  },
+  "dahllan": {
+    "nome": "Dahllan",
+    "atributos": {
+      "sab": 4,
+      "des": 2,
+      "int": -3
+    },
+    "habilidades": [
+      "amiga_das_plantas",
+      "armadura_de_allihanna",
+      "empatia_selvagem"
+    ]
+  },
+  "elfo": {
+    "nome": "elfo",
+    "atributos":{
+      "int": 4,
+      "des": 2,
+      "con": -2
+    },
+    "habilidades": [
+      "graca_de_glorienn",
+      "heranca_feerica",
+      "sentidos_elficos"
+    ]
+  },
+  "goblin": {
+    "nome": "Goblin",
+    "atributos": {
+      "des": 4,
+      "int": 2,
+      "car": -2
+    },
+    "habilidades": [
+      "engenhoso",
+      "espelunqueiro",
+      "peste_esguia",
+      "rato_das_ruas"
+    ]
+  },
+  "lefou": {
+    "nome": "Lefou",
+    "atributos": {
+      "livre": {
+        "valor": 2,
+        "menos": []
+      },
+      "car": 2
+    },
+    "habilidades": [
+      "cria_da_tormenta",
+      "deformidade"
+    ]
+  },
+  "minotauro": {
+    "nome": "Minotauro",
+    "atributos": {
+      "for": 4,
+      "con": 2,
+      "sab": -2
+    },
+    "habilidades": [
+      "chifres",
+      "couro_rigido",
+      "faro",
+      "medo_de_altura"
+    ]
+  },
+  "qareen": {
+    "nome": "Qareen",
+    "atributos": {
+      "car": 4,
+      "int": 2,
+      "sab": -2
+    },
+    "habilidades": [
+      "desejos",
+      "resistencia_elemental",
+      "tatuagem_mistica"
+    ]
+  },
+  "golem": {
+    "nome": "Golem",
+    "atributos": {
+      "for": 4,
+      "con": 2,
+      "car": -2
+    },
+    "habilidades": [
+      "canalizar_reparos",
+      "chassi",
+      "criatura_artificial",
+      "espirito_elemental",
+      "sem_origem"
+    ]
+  },
+  "hynne": {
+    "nome": "Hynne",
+    "atributos": {
+      "des": 4,
+      "car": 2,
+      "for": -2
+    },
+    "habilidades": [
+      "arremessador",
+      "pequeno_e_rechonchudo",
+      "sorte_salvadora"
+    ]
+  },
+  "kliren": {
+    "nome": "Kliren",
+    "atributos": {
+      "int": 4,
+      "car": 2,
+      "for": -2
+    },
+    "habilidades": [
+      "hibrido",
+      "logica_gnomica",
+      "ossos_frageis",
+      "vanguardista"
+    ]
+  },
+  "medusa": {
+    "nome": "Medusa",
+    "atributos": {
+      "des": 4,
+      "car": 2
+    },
+    "habilidades": [
+      "cria_de_megalokk",
+      "natureza_venenosa",
+      "olhar_atordoante"
+    ]
+  },
+  "osteon": {
+    "nome": "Osteon",
+    "atributos": {
+      "livre": {
+        "valor": 2,
+        "menos": ["con"]
+      },
+      "con": -2
+    },
+    "habilidades": [
+      "armadura_ossea",
+      "memoria_postuma",
+      "natureza_esqueletica",
+      "preco_da_nao_vida"
+    ]
+  },
+  "sereia":{
+    "nome": "Seria / Tritão",
+    "atributos": {
+      "livre": {
+        "val": 2,
+        "menos": []
+      }
+    },
+    "habilidades": [
+      "cancao_dos_mares",
+      "mestre_do_tridente",
+      "transformacao_anfibia"
+    ]
+  },
+  "silfde": {
+    "nome": "Sílfide",
+    "atributos": {
+      "car": 4,
+      "des": 2,
+      "for": -4
+    },
+    "habilidades": [
+      "asas_de_borboleta",
+      "espirito_da_natureza",
+      "magia_das_fadas"
+    ]
+  },
+  "angelus": {
+    "nome": "Suraggel (Aggelus)",
+    "atributos": {
+      "sab": 4,
+      "car": 2
+    },
+    "habilidades": [
+      "heranca_divina",
+      "luz_sagrada"
+    ]
+  },
+  "sulfure": {
+    "nome": "Suraggel (Sulfure)",
+    "atributos": {
+      "des": 4,
+      "int": 2
+    },
+    "habilidades": [
+      "heranca_divina",
+      "sombras_profanas"
+    ]
+  },
+  "trog": {
+    "nome": "Trog",
+    "atributos": {
+      "con": 4,
+      "for": 2,
+      "int": -2
+    },
+    "habilidades": [
+      "mau_cheiro",
+      "mordida",
+      "reptiliano",
+      "sangue_frio"
+    ]
+  }
+}
