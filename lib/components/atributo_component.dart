@@ -4,10 +4,9 @@ import 'package:tormenta/pages/mundo.dart';
 
 
 class AtributoComponent extends StatefulWidget{
-  final Function ss;
   final String atributo;
   final bool base;
-  const AtributoComponent(this.atributo, this.ss,[this.base = true]);
+  const AtributoComponent(this.atributo, [this.base = true]);
 
   @override
   State<AtributoComponent> createState() =>AtributoComponent_State();
@@ -40,7 +39,8 @@ class AtributoComponent_State extends State<AtributoComponent>{
               if(val > 0) {
                 --Mundo.personagem().atributos[widget.atributo]?.valorBase;
               }
-              widget.ss();
+              //widget.ss();
+              setState((){});
             },
             icon: const Icon(Icons.remove)
         ),
@@ -48,7 +48,8 @@ class AtributoComponent_State extends State<AtributoComponent>{
         IconButton(
             onPressed: (){
               ++Mundo.personagem().atributos[widget.atributo]?.valorBase;
-              widget.ss();
+              //widget.ss();
+              setState((){});
             },
             icon: const Icon(Icons.add)
         ),Container(),

@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:ffi';
 
 import 'package:flutter/services.dart';
 import 'package:tormenta/model/atributo.dart';
@@ -10,9 +9,7 @@ class Personagem{
   Map<String, Atributo> atributos = {};
   Map<String, dynamic> pericias  = {};
   String nome = 'nhaa21';
-  int ouro = 10;
   int vidaMax = 10;
-  int vidaAtual = 10;
   int manaMax = 10;
   int manaAtual = 0;
   Future inicializa_pericia() async {

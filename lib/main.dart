@@ -14,24 +14,21 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-    @override
-    void f() async {
-      Personagem p = await Personagem.cria();
-      Mundo.setPersonagem(p);
-      Navigator.push(
-          Mundo.context(),
-          MaterialPageRoute(builder: (context) => AtributoPage())
-      );
-    }
-    Widget build(BuildContext context) {
-      Mundo.setContext(context);
-      f();
-      return MaterialApp(
-        title: 'Tormenta genesis',
-        theme: ThemeData.dark(),
-        home:  Scaffold(
-            body: LoadPage()
-        ),
-      );
-    }
+  @override
+  void f() async {
+    Personagem p = await Personagem.cria();
+    Mundo.setPersonagem(p);
+    Navigator.push(Mundo.context(),
+        MaterialPageRoute(builder: (context) => AtributoPage()));
+  }
+
+  Widget build(BuildContext context) {
+    Mundo.setContext(context);
+    f();
+    return MaterialApp(
+      title: 'Tormenta genesis',
+      theme: ThemeData.dark(),
+      home: Scaffold(body: LoadPage()),
+    );
+  }
 }

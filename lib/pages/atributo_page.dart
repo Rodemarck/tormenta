@@ -32,7 +32,7 @@ class _AtributoPage_State extends State<AtributoPage>{
     );
     Mundo.personagem().atributos.keys.forEach((element) {
       lista.add(Container(height: 25,));
-      lista.add(AtributoComponent(element, (){setState((){});},base_atr));
+      lista.add(AtributoComponent(element, base_atr));
     });
     return  Scaffold(
         body: Center(
