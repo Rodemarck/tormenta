@@ -14,6 +14,12 @@ class _AtributoPage_State extends State<AtributoPage>{
   bool base_atr = true;
   @override
   Widget build(BuildContext context) {
+
+    Map <String,int> a = {
+      'oi':15
+    };
+    print(a['a'] == null);
+    print(a['oi']);
     Mundo.setContext(context);
     List<Widget> lista = [];
     lista.add(Container(height: 50,));
@@ -30,10 +36,13 @@ class _AtributoPage_State extends State<AtributoPage>{
         ],
       )
     );
+
     Mundo.personagem().atributos.keys.forEach((element) {
       lista.add(Container(height: 25,));
       lista.add(AtributoComponent(element, base_atr));
     });
+
+
     return  Scaffold(
         body: Center(
           child: Column(

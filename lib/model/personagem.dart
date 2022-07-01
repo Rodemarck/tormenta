@@ -7,7 +7,7 @@ import 'package:tormenta/model/pericia.dart';
 
 class Personagem{
   Map<String, Atributo> atributos = {};
-  Map<String, dynamic> pericias  = {};
+  Map<String, Pericia> pericias  = {};
   String nome = 'nhaa21';
   int vidaMax = 10;
   int manaMax = 10;

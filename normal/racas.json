@@ -180,7 +180,7 @@
     "nome": "Seria / Tritão",
     "atributos": {
       "livre": {
-        "val": 2,
+        "valor": 2,
         "menos": []
       }
     },

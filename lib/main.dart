@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:tormenta/model/personagem.dart';
+import 'package:tormenta/model/raca.dart';
 import 'package:tormenta/pages/atributo_page.dart';
 import 'package:tormenta/pages/home_page.dart';
 import 'package:tormenta/pages/load_page.dart';
@@ -16,6 +17,8 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   void f() async {
+    await Raca.carregar();
+    print(Raca.racas.keys);
     Personagem p = await Personagem.cria();
     Mundo.setPersonagem(p);
     Navigator.push(Mundo.context(),
