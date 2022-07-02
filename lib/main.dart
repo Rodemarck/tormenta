@@ -31,7 +31,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tormenta genesis',
       theme: ThemeData.dark(),
-      home: Scaffold(body: LoadPage()),
+      routes: {
+        '/': (context) => HomePage(),
+        '/login': (context) => LoginPage(),
+        '/atributo': (context) => AtributoPage(),
+        '/load': (context) => LoadPage(),
+      },
+      initialRoute: '/load',
     );
   }
 }
