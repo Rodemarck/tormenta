@@ -1,3 +1,22 @@
 {
-
+    "arcanista":{
+        "nome":"Aracanista",
+        "vida":{
+            "inicial":{
+                "valor":8,
+                "modificador":"con"
+            },
+            "nivel":{
+                "valor":2,
+                "modificador":"con"
+            }
+        },
+        "mana":{
+            "inicial":6,
+            "nivel":6
+        },
+        "pericias":{
+            
+        }
+    }
 }

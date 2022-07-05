@@ -10,14 +10,16 @@ class Raca {
   List<String> habilidades = [];
 
   static Map<String, Raca> racas = {};
-
+  static Map<String, String> nomes = {};
   static Future carregar() async {
     final String response = await rootBundle.loadString('normal/racas.json');
     final data = await json.decode(response);
     racas = {};
+    nomes = {};
     for (var raca in data.keys) {
       var raca_ = data[raca];
       String nome_ = raca_['nome'];
+      nomes[nome_] = raca;
       List<String> habilidades_ =
           JsonHelper.getStringList(raca_['habilidades']);
       List<String> menos_ = [];
@@ -36,10 +38,16 @@ class Raca {
     return 'this';
   }
 
-  static List<String> nomes() {
+  static List<String> getNomes() {
     List<String> lista = [];
+    nomes.keys.forEach((element) {
+      lista.add(element);
+    });
+    return lista;
+  }
 
-    return racas.map((key, value) => value.nome);
+  static String getNome(String nome) {
+    return nomes[nome] as String;
   }
 
   Raca(this.nome, this.habilidades, this.atributos, [this.menos = const []]);

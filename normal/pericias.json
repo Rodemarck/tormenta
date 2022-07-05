@@ -13,6 +13,15 @@
       "esgueirar": {}
     }
   },
+  "adestramento":{
+    "nome":"Adestramento",
+    "atributo":"car",
+    "treino":true,
+    "descrição":"Saber lidar com animais",
+    "acoes":{
+      ""
+    }
+  },
   "atletismo": {
     "nome": "Atletismo",
     "atributo": "for",
@@ -29,8 +38,6 @@
   "atuacao": {
     "nome": "Atuação",
     "atributo": "car",
-    "treino": false,
-    "penalidade": false,
     "descricao": "Fazer apresentações artísticas.",
     "acoes": {
       "apresentacao": {},
@@ -40,8 +47,6 @@
   "cavalgar": {
     "nome": "Cavalgar",
     "atributo": "des",
-    "treino": false,
-    "penalidade": false,
     "descricao": "Condução de montarias.",
     "acoes": {
       "conduzir": {},
